@@ -7,8 +7,8 @@ import SearchAppBar from './BarraBusqueda';
 import ComplexGrid from  './ComplexGrid';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
+import Button from '@material-ui/core/Button';
 
 
 function Home(){
@@ -37,7 +37,6 @@ function Navegador(){
     
   );
 }
-
 
 function App (){
   return (
@@ -71,6 +70,10 @@ function App (){
           <Route path="/home">
             <Paper>
               <Home />
+              <Button variant="contained" style = {{textAlign: 'left'}}>
+<Link to="/about">+ Añadir</Link>
+      </Button>
+              <br/><br/>
               <ComplexGrid /> 
               <br/><br/>
             </Paper>
