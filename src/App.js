@@ -1,15 +1,15 @@
 import React from 'react';
-
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import SearchAppBar from './BarraBusqueda';
+import ComplexGrid from  './ComplexGrid';
 
 function Home(){
   return <h2>Home</h2>;
 }
-function Tasks(){
-  return <h2>tasks</h2>;
+function About(){
+  return <h2>About</h2>;
 }
 
 function Navegador(){
@@ -21,7 +21,7 @@ function Navegador(){
               <Link to="/home">Home</Link>
             </li>
             <li>
-              <Link to="/tasks">Tasks</Link>
+              <Link to="/about">About</Link>
             </li>
           </ul>
         </nav>
@@ -29,8 +29,8 @@ function Navegador(){
          {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
        <Switch>
-          <Route path="/tasks">
-          <Tasks/>
+          <Route path="/about">
+          <About/>
           </Route>
           <Route path="/home">
             <Home />
@@ -41,7 +41,6 @@ function Navegador(){
     
   );
 }
-
 
 
 function App (){
@@ -60,13 +59,14 @@ function App (){
             </nav>
           </div>
         </Grid>
+        <Grid item xs = {4}>
+          <ComplexGrid /> 
+        </Grid>
   
       </Grid>
       
     </div>
   );
 }
-
-
 
   export default App;
