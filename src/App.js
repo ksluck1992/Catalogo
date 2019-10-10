@@ -4,11 +4,13 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import SearchAppBar from './BarraBusqueda';
-import ComplexGrid from  './ComplexGrid';
+
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Divider from '@material-ui/core/Divider';
 import Button from '@material-ui/core/Button';
+import RecipeReviewCard from './Components/Pruebacards';
+
 
 
 function Home(){
@@ -74,7 +76,8 @@ function App (){
 <Link to="/about">+ Añadir</Link>
       </Button>
               <br/><br/>
-              <ComplexGrid /> 
+              <RecipeReviewCard />
+             
               <br/><br/>
             </Paper>
           </Route>
