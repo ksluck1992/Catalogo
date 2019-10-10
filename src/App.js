@@ -9,7 +9,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Divider from '@material-ui/core/Divider';
 import Button from '@material-ui/core/Button';
- import IntegrationDownshift from './formulario';
+import IntegrationTextField from './formulario';
 
 
 function Home(){
@@ -63,7 +63,6 @@ function App (){
             </div>
           </Grid>
           <Grid item xs = {9}>
-            
         <Switch>
           <Route path="/about">
             <Paper>
@@ -84,8 +83,9 @@ function App (){
             </Route>
             <Route path="/llamar">
               <Paper>
-                <h2>Añadir Producto</h2>
-              <IntegrationDownshift/>
+                <h2 style={{textAlign: 'center'}}>Añadir Producto</h2>
+              <IntegrationTextField/>
+              <br/><br/>  <br/><br/><br/> 
               <Button variant="contained">Guardar</Button>
               </Paper>
           </Route>
