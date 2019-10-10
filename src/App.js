@@ -10,7 +10,7 @@ import ListItem from '@material-ui/core/ListItem';
 import Divider from '@material-ui/core/Divider';
 import Button from '@material-ui/core/Button';
 import IntegrationTextField from './formulario';
-
+import MediaCard from './About';
 
 function Home(){
   return <h2 style={{textAlign: 'center'}}>Home</h2>;
@@ -22,7 +22,6 @@ function Llamar(){
 return <h2 style={{textAlign: 'center'}}>Añadir Producto</h2>;
 
 }
-
 
 function Navegador(){
   return (
@@ -66,7 +65,7 @@ function App (){
         <Switch>
           <Route path="/about">
             <Paper>
-          <About/>
+          <MediaCard/>
           </Paper>
           </Route>
           <Route path="/home">
