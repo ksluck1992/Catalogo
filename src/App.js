@@ -9,6 +9,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Divider from '@material-ui/core/Divider';
 import Button from '@material-ui/core/Button';
+ import IntegrationDownshift from './formulario';
 
 
 function Home(){
@@ -17,6 +18,11 @@ function Home(){
 function About(){
   return <h2 style={{textAlign: 'center'}}>About</h2>;
 }
+function Llamar(){
+return <h2 style={{textAlign: 'center'}}>Añadir Producto</h2>;
+
+}
+
 
 function Navegador(){
   return (
@@ -29,6 +35,7 @@ function Navegador(){
           <Divider/>
           <ListItem button divider>
           <Link to="/about">About</Link>
+          
               </ListItem>
               </List>
           </Paper>
@@ -55,12 +62,8 @@ function App (){
               </nav>
             </div>
           </Grid>
-          <Grid item xs = {10}>
+          <Grid item xs = {9}>
             
-        
-        
-         {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/about">
             <Paper>
@@ -70,18 +73,28 @@ function App (){
           <Route path="/home">
             <Paper>
               <Home />
-              <Button variant="contained" style = {{textAlign: 'left'}}>
-<Link to="/about">+ Añadir</Link>
-      </Button>
+              <Button variant="contained">
+              <Link to="/llamar">+ Añadir Producto</Link>
+              </Button>
               <br/><br/>
-              <ComplexGrid /> 
+              <ComplexGrid />
               <br/><br/>
+              
             </Paper>
+            </Route>
+            <Route path="/llamar">
+              <Paper>
+                <h2>Añadir Producto</h2>
+              <IntegrationDownshift/>
+              <Button variant="contained">Guardar</Button>
+              </Paper>
           </Route>
         </Switch>
         </Grid>
         </Grid>
+       
     </Router>
+    
      </div>
   );
 }
