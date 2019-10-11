@@ -9,27 +9,15 @@ import CardContent from '@material-ui/core/CardContent';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 import red from '@material-ui/core/colors/red';
+import Grid from '@material-ui/core/Grid';
 
 const styles = theme => ({
   card: {
     maxWidth: 400,
   },
   media: {
-    height: 0,
+    height: 150,
     paddingTop: '56.25%', // 16:9
-  },
-  actions: {
-    display: 'flex',
-  },
-  expand: {
-    transform: 'rotate(0deg)',
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
-      duration: theme.transitions.duration.shortest,
-    }),
-  },
-  expandOpen: {
-    transform: 'rotate(180deg)',
   },
   avatar: {
     backgroundColor: red[500],
@@ -48,7 +36,10 @@ class RecipeReviewCard1 extends React.Component {
 
     return (
       <div>
-      <Card className={classes.card}>
+        <Grid>
+        <Grid item xs = {4}> 
+      <Card className={classes.card} >
+    
         <CardHeader
           avatar={
             <Avatar aria-label="Recipe" className={classes.avatar}>
@@ -60,7 +51,7 @@ class RecipeReviewCard1 extends React.Component {
         />
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/paella.jpg"
+          image="/imagenes_pers/descarga3.jpg" 
           title="David"
         />
         <CardContent>
@@ -69,74 +60,115 @@ class RecipeReviewCard1 extends React.Component {
             21 Años de edad , soltero
           </Typography>
         </CardContent>
+        
       </Card>
+      </Grid>
       
+      
+      <br/>
+      <Grid item xs = {4}>
       <Card className={classes.card}>
+     
       <CardHeader
         avatar={
           <Avatar aria-label="Recipe" className={classes.avatar}>
-            D
+            J
           </Avatar>
         }
-        title="David"
+        title="Jordi"
        
       />
       <CardMedia
         className={classes.media}
-        image="/static/images/cards/paella.jpg"
-        title="David"
+        image="/imagenes_pers/descarga1.jpg" 
+        title="Jordi"
       />
       <CardContent>
         <Typography component="p">
-          Amado David Coronel
-          21 Años de edad , soltero
+          Jordi Molist Bustamante
+          20 Años de edad , soltero
         </Typography>
       </CardContent>
     </Card>
+    </Grid>
+  
+    <br/>
+    <Grid item xs = {4}>
       <Card className={classes.card}>
       <CardHeader
         avatar={
           <Avatar aria-label="Recipe" className={classes.avatar}>
-            D
+            R
           </Avatar>
         }
-        title="David"
+        title="Ronny"
        
       />
       <CardMedia
         className={classes.media}
-        image="/static/images/cards/paella.jpg"
-        title="David"
+        image ="/imagenes_pers/Ragnar.jpg" 
+        title="Ronny"
       />
       <CardContent>
         <Typography component="p">
-          Amado David Coronel
-          21 Años de edad , soltero
+         Ronaldo Gonzalez 
+          19 Años de edad , soltero
         </Typography>
       </CardContent>
     </Card>
+    </Grid>
+    <br/>
+    <Grid item xs = {4}>
       <Card className={classes.card}>
       <CardHeader
         avatar={
           <Avatar aria-label="Recipe" className={classes.avatar}>
-            D
+            R
           </Avatar>
         }
-        title="David"
+        title="Guille"
        
       />
       <CardMedia
         className={classes.media}
-        image="/static/images/cards/paella.jpg"
-        title="David"
+        image ="/imagenes_pers/yoda.jpeg" 
+        title="Guille"
       />
       <CardContent>
         <Typography component="p">
-          Amado David Coronel
-          21 Años de edad , soltero
+         Guillermo Ramirez 
+          19 Años de edad , soltero
         </Typography>
       </CardContent>
     </Card>
+    </Grid>
+    
+    <br/>
+    <Grid item xs = {4}>
+      <Card className={classes.card}>
+      <CardHeader
+        avatar={
+          <Avatar aria-label="Recipe" className={classes.avatar}>
+            L
+          </Avatar>
+        }
+        title="Lucas"
+       
+      />
+      <CardMedia
+        className={classes.media}
+        image="/imagenes_pers/spidey-2.jpg" 
+        title="Lucas"
+      />
+      <CardContent>
+        <Typography component="p">
+          Lucas Josias Barrios
+          27 Años de edad , CASADO
+        </Typography>
+      </CardContent>
+    </Card>
+    </Grid>
+    </Grid>
     </div>
     );
   }
