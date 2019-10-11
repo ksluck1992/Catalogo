@@ -8,7 +8,8 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Divider from '@material-ui/core/Divider';
 import Button from '@material-ui/core/Button';
-import RecipeReviewCard from './Components/Pruebacards';
+//import RecipeReviewCard from './Components/Pruebacards';
+import ProductListContainer from './ProductListContainer';
 
 
 
@@ -75,7 +76,7 @@ function App (){
 <Link to="/about">+ Añadir</Link>
       </Button>
               <br/><br/>
-              <RecipeReviewCard />
+              <ProductListContainer />
              
               <br/><br/>
             </Paper>

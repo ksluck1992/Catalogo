@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardMediam, CardContent, Typography } from '@material-ui/core';
 
-funtion ProductCard (props) {
+export default funtion ProductCard (props) {
     return (
         <Card>
             <CardMedia />
@@ -10,6 +10,4 @@ funtion ProductCard (props) {
             </CardContent>
         </Card>
     );
-}
-
-export default ProductCard; 
+};
