@@ -4,14 +4,13 @@ import TextField from '@material-ui/core/TextField';
 import { Grid } from '@material-ui/core';
 
 
-class IntegrationTextField extends React.Component {
+class Editar extends React.Component {
   state = {
     nombre:'',
     categoria : '',
     proveedor:'',
     fechacompra: '',
     descripcion:'',
-    imagen:'',
   };
 
 
@@ -91,15 +90,6 @@ class IntegrationTextField extends React.Component {
          margin="normal"
          fullWidth
          />
-<br/>
-<TextField
-        
-        label="Descripcion"
-        value={this.state.descripcion}
-        onChange={this.handleChange('descripcion')}
-        margin="normal"
-        fullWidth
-        />
 </Grid>
          </Grid>
          
@@ -107,4 +97,4 @@ class IntegrationTextField extends React.Component {
     );
   }
 }
-export default IntegrationTextField ;
+export default Editar ;

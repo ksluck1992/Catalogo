@@ -10,6 +10,7 @@ import ListItem from '@material-ui/core/ListItem';
 import Divider from '@material-ui/core/Divider';
 import Button from '@material-ui/core/Button';
 import IntegrationTextField from './formulario';
+import Editar from './editar';
 import RecipeReviewCard1 from './Nombres';
 
 function Home(){
@@ -20,7 +21,6 @@ function About(){
 }
 function Llamar(){
 return <h2 style={{textAlign: 'center'}}>Añadir Producto</h2>;
-
 }
 
 function Navegador(){
@@ -67,21 +67,26 @@ function App (){
             <Paper>
             <h2 style={{textAlign: 'center'}}>About us</h2>
             <br/>
+      
+         
           <RecipeReviewCard1 />
           </Paper>
           </Route>
+
           <Route path="/home">
             <Paper>
               <Home />
+
               <Button variant="contained">
               <Link to="/llamar">+ Añadir Producto</Link>
+              
               </Button>
               <br/><br/>
               <ComplexGrid />
               <br/><br/>
-              
             </Paper>
             </Route>
+
             <Route path="/llamar">
               <Paper>
                 <h2 style={{textAlign: 'center'}}>Añadir Producto</h2>
@@ -89,6 +94,9 @@ function App (){
               <br/><br/>  <br/><br/><br/> 
               <Button variant="contained">Guardar</Button>//hacer un post con axios 
               </Paper>
+          </Route>
+          <Route path="/editar">
+         < Editar />
           </Route>
         </Switch>
         </Grid>
