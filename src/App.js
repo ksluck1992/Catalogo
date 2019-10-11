@@ -85,7 +85,7 @@ function App (){
                 <h2 style={{textAlign: 'center'}}>Añadir Producto</h2>
               <IntegrationTextField/>
               <br/><br/>  <br/><br/><br/> 
-              <Button variant="contained">Guardar</Button>
+              <Button variant="contained">Guardar</Button>//hacer un post con axios 
               </Paper>
           </Route>
         </Switch>
