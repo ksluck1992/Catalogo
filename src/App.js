@@ -10,7 +10,7 @@ import ListItem from '@material-ui/core/ListItem';
 import Divider from '@material-ui/core/Divider';
 import Button from '@material-ui/core/Button';
 import IntegrationTextField from './formulario';
-import MediaCard from './About';
+import RecipeReviewCard1 from './Nombres';
 
 function Home(){
   return <h2 style={{textAlign: 'center'}}>Home</h2>;
@@ -65,7 +65,9 @@ function App (){
         <Switch>
           <Route path="/about">
             <Paper>
-          <MediaCard/>
+            <h2 style={{textAlign: 'center'}}>About us</h2>
+            <br/>
+          <RecipeReviewCard1 />
           </Paper>
           </Route>
           <Route path="/home">

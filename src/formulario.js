@@ -72,10 +72,10 @@ class IntegrationTextField extends React.Component {
          />
      <br/>
      <TextField
-        id="date"
+    
         label="Fecha de compra"
         type="date"
-        defaultValue="2017-05-24"
+        defaultValue="2019-10-11"
         InputLabelProps={{
           shrink: true,
         }}
