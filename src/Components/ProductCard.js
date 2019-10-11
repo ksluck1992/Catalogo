@@ -19,9 +19,10 @@ export default withStyles({
     item:{
         minWidth: "350px",
         margin: "1em",
+        textAlign: "center",
         boxSizing: "border-box"
     },
     media:{
-        minWidth: "200px"
+        minWidth: "150px"
     }
 })(ProductCard); 
