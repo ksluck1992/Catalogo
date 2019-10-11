@@ -12,6 +12,7 @@ import IntegrationTextField from './formulario';
 import Editar from './editar';
 import RecipeReviewCard1 from './Nombres';
 import ProductListContainer from './ProductListContainer';
+import SearchAppBarfooter from './barrabusquedafooter';
 
 function Home(){
   return <h2 style={{textAlign: 'center'}}>Home</h2>;
@@ -22,7 +23,9 @@ function About(){
 function Llamar(){
 return <h2 style={{textAlign: 'center'}}>Añadir Producto</h2>;
 }
-
+function Guardar(){
+  return <h2 style={{textAlign: 'center'}}>Guardar</h2>;
+}
 function Navegador(){
   return (
     <nav>
@@ -93,16 +96,30 @@ function App (){
                 <h2 style={{textAlign: 'center'}}>Añadir Producto</h2>
               <IntegrationTextField/>
               <br/><br/>  <br/><br/><br/> 
-              <Button variant="contained">Guardar</Button>//hacer un post con axios 
+               //hacer un post con axios 
               </Paper>
           </Route>
+          <Route path="/guardar">
+              <Paper>
+                <h2 style={{textAlign: 'center'}}>Guardar</h2>
+              <IntegrationTextField/>
+              <br/><br/>  <br/><br/><br/> 
+              
+              </Paper>
+          </Route>
+
           <Route path="/editar">
          < Editar />
           </Route>
         </Switch>
+        
         </Grid>
+      
+        
         </Grid>
-       
+        <footer>
+        <SearchAppBarfooter/>
+        </footer>
     </Router>
     
      </div>
