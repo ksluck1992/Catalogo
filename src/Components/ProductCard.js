@@ -5,8 +5,11 @@ import { Card, CardMedia, CardContent, Typography } from '@material-ui/core';
 function ProductCard ( name, classes, image, ) {
     return (
         <Card className={classes.item}>
-            <CardMedia className={classes.media} image ={image}/>
+            <CardMedia 
+            
+             className={classes.media} image ={image}/>
             <CardContent>
+            <FavoriteIcon />
                 <Typography component="p" variant="h6">{name}</Typography>
                 xxxxx 
             </CardContent>
@@ -16,13 +19,16 @@ function ProductCard ( name, classes, image, ) {
 }
  
 export default withStyles({
+
+
     item:{
-        minWidth: "350px",
-        margin: "1em",
+        minWidth: "700px",
+        maxWidth: "700px",
+        margin: "20sem",
         textAlign: "center",
         boxSizing: "border-box"
     },
     media:{
-        minWidth: "150px"
+        maxWidth: "300px"
     }
 })(ProductCard); 

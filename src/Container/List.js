@@ -16,7 +16,7 @@ function List({ productData }) {
                         <Card style={{width: 200}}>
                             <CardMedia 
                                 style={{ height: 0, paddingTop: '56.25%'}}
-                                image={`/images/alpargatas_hombre.jpg`}/>
+                                image={`/images/${product.image}`}/>
                             <CardContent>
                                 <Typography>{product.nombre}</Typography>
                                 <Typography>{product.precio}</Typography>
