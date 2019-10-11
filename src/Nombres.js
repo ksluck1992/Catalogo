@@ -36,6 +36,7 @@ class RecipeReviewCard1 extends React.Component {
 
     return (
       <div>
+        <center>
         <Grid>
         <Grid item xs = {4}> 
       <Card className={classes.card} >
@@ -46,7 +47,7 @@ class RecipeReviewCard1 extends React.Component {
               D
             </Avatar>
           }
-          title="David"
+          title= "David"
          
         />
         <CardMedia
@@ -56,8 +57,13 @@ class RecipeReviewCard1 extends React.Component {
         />
         <CardContent>
           <Typography component="p">
-            Amado David Coronel
-            21 Años de edad , soltero
+          <h3>David Coronel</h3>
+          <Typography className = "subt" component = "p">
+        21 Años de edad
+        </Typography>
+        <Typography className = "subt" component = "p">
+        Soltero
+        </Typography>
           </Typography>
         </CardContent>
         
@@ -85,8 +91,13 @@ class RecipeReviewCard1 extends React.Component {
       />
       <CardContent>
         <Typography component="p">
-          Jordi Molist Bustamante
-          20 Años de edad , soltero
+        <h3>Jordi Molist</h3>
+         <Typography className = "subt" component = "p">
+        20 Años de edad
+        </Typography>
+        <Typography className = "subt" component = "p">
+        Comprometido
+        </Typography>
         </Typography>
       </CardContent>
     </Card>
@@ -101,19 +112,24 @@ class RecipeReviewCard1 extends React.Component {
             R
           </Avatar>
         }
-        title="Ronny"
+        title="Rony"
        
       />
       <CardMedia
         className={classes.media}
         image ="/imagenes_pers/Ragnar.jpg" 
-        title="Ronny"
+        title="Rony"
       />
       <CardContent>
         <Typography component="p">
-         Ronaldo Gonzalez 
-          19 Años de edad , soltero
+        <h3>Ronaldo González</h3>
+         <Typography className = "subt" component = "p">
+        19 Años de edad
         </Typography>
+        <Typography className = "subt" component = "p">
+        Soltero
+        </Typography>
+      </Typography>
       </CardContent>
     </Card>
     </Grid>
@@ -126,49 +142,34 @@ class RecipeReviewCard1 extends React.Component {
             R
           </Avatar>
         }
-        title="Guille"
-       
-      />
-      <CardMedia
-        className={classes.media}
-        image ="/imagenes_pers/yoda.jpeg" 
-        title="Guille"
-      />
-      <CardContent>
-        <Typography component="p">
-         Guillermo Ramirez 
-          19 Años de edad , soltero
-        </Typography>
-      </CardContent>
-    </Card>
-    </Grid>
-    
-    <br/>
-    <Grid item xs = {4}>
-      <Card className={classes.card}>
-      <CardHeader
-        avatar={
-          <Avatar aria-label="Recipe" className={classes.avatar}>
-            L
-          </Avatar>
-        }
+        
         title="Lucas"
        
       />
       <CardMedia
         className={classes.media}
         image="/imagenes_pers/spidey-2.jpg" 
-        title="Lucas"
+        title= "Lucas"
       />
       <CardContent>
         <Typography component="p">
-          Lucas Josias Barrios
-          27 Años de edad , CASADO
+          <h3>Lucas Josias Barrios</h3>
+         <left> <Typography className = "subt" component = "p">
+        27 Años de edad
+        </Typography>
+        <Typography className = "subt" component = "p">
+        CASADO
+        </Typography>
+        <Typography className = "subt" component = "p">
+        Es de Piscis
+        </Typography>
+        </left>
         </Typography>
       </CardContent>
     </Card>
     </Grid>
     </Grid>
+    </center>
     </div>
     );
   }
