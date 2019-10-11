@@ -11,6 +11,7 @@ import Button from '@material-ui/core/Button';
 import IntegrationTextField from './formulario';
 import Editar from './editar';
 import RecipeReviewCard1 from './Nombres';
+import ProductListContainer from './ProductListContainer';
 
 function Home(){
   return <h2 style={{textAlign: 'center'}}>Home</h2>;
@@ -81,12 +82,8 @@ function App (){
               
               </Button>
               <br/><br/>
-<<<<<<< HEAD
-              <ComplexGrid />
-=======
               <ProductListContainer />
              
->>>>>>> lucas
               <br/><br/>
             </Paper>
             </Route>
